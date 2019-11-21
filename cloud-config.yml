@@ -1,0 +1,16 @@
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAgsY/DfA0W0wfaUqEvxkB1dGffNTcvdUWC9gyBiJOE3C/RrVJgf2n8X9TOfiNtbPz9frtVVMKMhIK4rPlx3tjW86NgJVnuEvt+FGdwi3JncCBaKmL5fW8ErC8PQRKxL7dO+VKoxMM6oZsTyaWZc6GQWhIOq51jlFAkQhGpdrTGH/lLLfjdLcORoFlIbzVoCE98j9Tgs5ADOj8VrSdp+Ycb5j44TQnZZYoKOtn/iQA0ElJwzkpZpS04ajT4i5Zb8oPFbAXYxWANJzqeg0BKxmTTw+6EaDL5y+QcIiyXupkx17tNidNs1iDfDz7lWEmkywbhY9y4Qd+XsFjtgcdCWDArw== admin@myserver.com
+hostname: rancheros.mydomain.com
+rancher:
+  network:
+    interfaces:
+      eth0:
+        address: 192.168.1.6/24
+        gateway: 192.168.1.254
+        mtu: 1500
+        dhcp: false
+    dns:
+      nameservers:
+        - 8.8.8.8
+        - 208.67.220.220
+        
